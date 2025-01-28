@@ -1,0 +1,31 @@
+{
+  "name": "my-resume",
+  "version": "0.0.1",
+  "description": "Resume CHIHAB Hassane",
+  "main": "index.js",
+  "author": "CHIHAB HASSANE <hassanchihab@gmail.com>",
+  "homepage": "https://github.com/avatarvb/hchihab.github.io.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avatarvb/hchihab.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avatarvb/hchihab.github.io.git/issues"
+  },
+  "license": "NonCommercial-ShareAlike 1.0 Generic",
+  "scripts": {
+    "serve": "concurrently \"postcss ./tailwind.css -o docs/build.css --watch\"  \"live-server ./docs \"",
+    "build": "cross-env NODE_ENV=build postcss ./tailwind.css -o ./docs/build.css"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "autoprefixer": "^9.7.4",
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "live-server": "^1.2.1",
+    "postcss-cli": "^7.0.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.2.0"
+  }
+}
